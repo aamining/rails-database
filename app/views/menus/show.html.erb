@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @menu.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @menu.image %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag(@menu.avatar_url.to_s, class: "avatar_icon") %>
+</p>
+
+<%= link_to 'Edit', edit_menu_path(@menu) %> |
+<%= link_to 'Back', menus_path %>
